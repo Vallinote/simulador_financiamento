@@ -1,5 +1,5 @@
 # simulador_financiamento
-![Author](https://img.shields.io/badge/Author-Vallinote--s--s-blue)
+![Author](https://img.shields.io/badge/Author-Igor-Vallinote-blue)
 ![Python](https://img.shields.io/badge/Python-3%2B-yellow)
 ![License](https://img.shields.io/badge/License-MIT-red)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-green)
