@@ -5,10 +5,9 @@ pd.options.display.float_format = '{:.2f}'.format #opção para os floats aparec
 
 class Financiamento():
     #estrutura básica do financiamento
-    def __init__(self, bem_financiado, entrada, valor_total, prazo, taxa_juros, frequencia_anual=False, carencia=0, capitalizacao_juros=False, acrescimo_saldo=False): 
+    def __init__(self, entrada, valor_total, prazo, taxa_juros, frequencia_anual=False, carencia=0, capitalizacao_juros=False, acrescimo_saldo=False): 
         self.valor_total = np.float64(valor_total)
         self.entrada = np.float64(entrada)
-        self.bem_financiado = bem_financiado #categoria mais utilizada caso for construído um banco com as simulações
         self.prazo = int(prazo)
         self.saldo_devedor = self.valor_total - self.entrada
         self.carencia = carencia
@@ -283,7 +282,6 @@ class Amortizacao(Financiamento):
     def __init__(self, financiamento, valor, sistema):
         # Usa os dados do financiamento existente para inicializar a classe pai
         super().__init__(
-            bem_financiado=financiamento.bem_financiado,
             entrada=financiamento.entrada,
             valor_total=financiamento.valor_total,
             prazo=financiamento.prazo,
