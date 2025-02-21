@@ -11,6 +11,7 @@ O código deste repositório são baseados nas lógicas apresentadas no capítul
 Tratam-se de duas classes, na qual a segunda herda os parâmetros iniciais da primeira, voltadas para duas operações:
 
 1. Financiamento:
+
    Replica a operação de financiamento com base nos parâmetros básicos:
     - valor_total (float): valor total do bem financiado.
     - prazo (int): número de meses do financiamento.
@@ -22,6 +23,7 @@ Tratam-se de duas classes, na qual a segunda herda os parâmetros iniciais da pr
   
    A partir disso, cabe ao usuário escolher dentre as duas modalidades de sistema de amortização disponível: a SAC ou SPC/Price.
 
-2. Amortização:
+3. Amortização:
+
    A ideia desta classe é estimar os impactos de amortizações extras e constantes no financiamento contratado para as duas modalidades consideradas aqui.
    Permitindo que as amortizações ocorram como desconto nos   valores futuros de parcelas, ou também no abatimento de parcelas futuras do financiamento.
